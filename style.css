@@ -1,0 +1,94 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+  background: linear-gradient(to right, #74ebd5, #9face6);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.container {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+
+.temp h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+input[type="text"] {
+  padding: 12px;
+  width: 70%;
+  border: none;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #4b6cb7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #182848;
+}
+
+
+#city, #country, #weather-condition, #time {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #444;
+}
+
+
+#icon {
+  width: 80px;
+  margin-top: 15px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  input[type="text"], button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .temp h1 {
+    font-size: 2.5rem;
+  }
+
+  #icon {
+    width: 60px;
+  }
+}
